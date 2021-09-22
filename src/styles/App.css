@@ -14,9 +14,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -46,12 +45,29 @@
 
 .card__songImgContainer {
   position: relative;
-  top: -7.5rem;
+  top: -8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 15rem;
   min-width: 15rem;
   min-height: 15rem;
   background: var(--greyLight-1);
   -webkit-box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
           box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+  border-radius: 3rem;
+}
+
+.card__img {
+  width: 90%;
+  height: 90%;
   border-radius: 3rem;
 }
 
@@ -133,13 +149,15 @@
   width: 100%;
   height: 2rem;
   cursor: pointer;
-  -webkit-transform: translateX(-10rem);
-          transform: translateX(-10rem);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-1)), to(var(--color-2)));
-  background-image: linear-gradient(to right, var(--color-1), var(--color-2));
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-box-shadow: inset 0.1rem 0.1rem 0.2rem var(--white), inset -0.1rem -0.1rem 0.6rem var(--greyLight-2);
           box-shadow: inset 0.1rem 0.1rem 0.2rem var(--white), inset -0.1rem -0.1rem 0.6rem var(--greyLight-2);
   border-radius: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-1)), to(var(--color-2)));
+  background-image: linear-gradient(to right, var(--color-1), var(--color-2));
 }
 
 .songInfo .trackLength {
