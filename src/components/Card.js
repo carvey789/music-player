@@ -57,6 +57,7 @@ const Card = ({song, setSong, songList}) => {
     useEffect(() => {
         setSong(songList[index]);
         setIsPlay(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [index]);
 
     useEffect(() => {

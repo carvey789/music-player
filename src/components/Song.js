@@ -2,7 +2,7 @@ import React from "react";
 
 const Song = ({song, setSong, songList}) => {
     const clickHandler = (id) => {
-        setSong(songList.filter(song => song.id == id)[0])
+        setSong(songList.filter(song => song.id === id)[0])
     }
 
     return (
