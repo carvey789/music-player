@@ -7,7 +7,7 @@ const Song = ({song, setSong, songList}) => {
 
     return (
         <div className="songListContainer__song" onClick={() => clickHandler(song.id)}>
-            <img src={song.image} className="songListContainer__img" ></img>
+            <img src={song.image} className="songListContainer__img" alt ="img"></img>
             <div className="songListContainer__info">
                 <h3 className="songListContainer__title">{song.title}</h3>
                 <p className="songListContainer__artist">{song.artist}</p>
