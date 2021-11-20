@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Card from "./components/Card";
 import data from './utils/data';
 import SongList from './components/SongList';
@@ -6,6 +6,7 @@ import SongList from './components/SongList';
 import './styles/App.css';
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [songList, setSongList] = useState(data);
   const [song, setSong] = useState(songList[0]);
   
